@@ -1,0 +1,1 @@
+-- Superseded: photo labels use the existing column anonymous.profiles.photo_hints. Safe to delete this file.

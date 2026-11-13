@@ -1,0 +1,22 @@
+.dd{position:relative;width:100%;font-family:'Manrope',system-ui,sans-serif}
+.dd-req{position:absolute;left:0;bottom:0;width:100%;height:1px;opacity:0;pointer-events:none;border:0;padding:0}
+.dd-btn{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:13px 16px;min-height:54px;font:inherit;font-size:15.5px;color:#141414;background:#fff;border:1px solid #E7DDC9;border-radius:14px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.dd-btn:hover{border-color:#B8963E}
+.dd.open .dd-btn,.dd-btn:focus-visible{border-color:#B8963E;box-shadow:0 0 0 3px rgba(184,150,62,.22);outline:0}
+.dd-em{font-size:22px;line-height:1;flex:none;width:30px;text-align:center}
+.dd-t{flex:1;font-weight:600}
+.dd-ph{flex:1;color:#8A8372}
+.dd-chev{margin-left:auto;font-size:20px;color:#B8963E;transition:transform .2s;line-height:1;transform:translateY(-3px)}
+.dd.open .dd-chev{transform:translateY(2px) rotate(180deg)}
+.dd-list{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 8px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #E7DDC9;border-radius:16px;box-shadow:0 18px 40px rgba(20,20,20,.18);max-height:340px;overflow:auto;animation:ddin .14s ease-out}
+@keyframes ddin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.dd-list li{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:11px;cursor:pointer;margin:0}
+.dd-list li.hi{background:#F6F0E1}
+.dd-list li.sel{background:#141414;color:#fff}
+.dd-list li.sel small{color:#C9BFA6}
+.dd-list li.sel .dd-ck{color:#D4B66A}
+.dd-tx{display:flex;flex-direction:column;gap:1px;flex:1;min-width:0}
+.dd-tx b{font-weight:600;font-size:15px}
+.dd-tx small{font-size:12.5px;color:#6F695D}
+.dd-ck{font-weight:700}
+@media (prefers-reduced-motion:reduce){.dd-list{animation:none}.dd-chev{transition:none}}

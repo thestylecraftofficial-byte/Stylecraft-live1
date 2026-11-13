@@ -1,0 +1,28 @@
+/* Stylist application: the same black, gold and cream look as the customer form. */
+body:has(.sf-page){background:#F8F4EB}
+.sf-page{max-width:760px;margin:0 auto;padding:36px 16px 90px;font-family:'Manrope',system-ui,sans-serif;color:#2B2A28}
+.sf-page .eyebrow{color:#B8963E;letter-spacing:.24em;font-size:11px;text-transform:uppercase;font-weight:700;margin:0 0 6px}
+.sf-page h1{font-family:'Playfair Display',Georgia,serif;font-size:38px;color:#141414;margin:0 0 8px}
+.sf-page .lead{color:#6F695D;margin:0 0 22px}
+.sf{background:#fff;border:1px solid #E7DDC9;border-radius:20px;padding:26px;display:grid;gap:18px;box-shadow:0 10px 30px rgba(20,20,20,.05)}
+.sf label,.sf legend{display:block;font-weight:700;font-size:13.5px;color:#141414;margin:0 0 7px;letter-spacing:.01em}
+.sf input[type=text],.sf input[type=tel],.sf input[type=email],.sf input[type=url],.sf textarea{width:100%;padding:14px 16px;min-height:54px;border:1px solid #E7DDC9;border-radius:14px;font:inherit;font-size:15.5px;background:#fff;color:#141414;transition:border-color .15s,box-shadow .15s}
+.sf textarea{min-height:110px;resize:vertical}
+.sf input:focus,.sf textarea:focus{outline:0;border-color:#B8963E;box-shadow:0 0 0 3px rgba(184,150,62,.22)}
+.sf .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:600px){.sf .row{grid-template-columns:1fr}.sf{padding:18px}}
+.sf fieldset{border:0;padding:0;margin:0}
+.sf legend{padding:0}
+.sf .pills{display:flex;flex-wrap:wrap;gap:10px}
+.sf .pill{display:inline-flex;align-items:center;gap:8px;margin:0;padding:11px 16px;border:1px solid #E7DDC9;border-radius:999px;background:#fff;cursor:pointer;font-weight:600;font-size:14.5px;transition:all .15s}
+.sf .pill input{position:absolute;opacity:0;pointer-events:none}
+.sf .pill:hover{border-color:#B8963E}
+.sf .pill:has(input:checked){background:#141414;color:#D4B66A;border-color:#141414}
+.sf .pill:has(input:focus-visible){outline:2px solid #B8963E;outline-offset:2px}
+.sf .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13.5px;color:#4A4640;line-height:1.5}
+.sf .consent input{margin-top:3px;accent-color:#B8963E}
+.sf .go{background:#141414;color:#D4B66A;border:0;border-radius:14px;min-height:56px;font:inherit;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13.5px;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.sf .go:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,20,20,.22)}
+.sf .go:disabled{opacity:.6;cursor:wait}
+.sf .err{color:#B5483A;margin:0;font-weight:600}
+.sf-done{background:#fff;border:1px solid #E7DDC9;border-radius:20px;padding:30px;text-align:center}

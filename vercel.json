@@ -1,0 +1,6 @@
+{
+  "crons": [
+    { "path": "/api/cron/deletion", "schedule": "30 21 * * *" },
+    { "path": "/api/cron/waitlist-mail", "schedule": "0 4 * * *" }
+  ]
+}
